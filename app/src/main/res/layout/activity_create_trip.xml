@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddCar">
+
+    <LinearLayout
+        android:id="@+id/linearAddcar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearColumnclose"
+            style="@style/groupStylepurple_A700"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/frameBackground"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_709pxv"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:gravity="start">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnwhereareyoug"
+                    android:layout_width="358dp"
+                    android:layout_height="685dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_36pxh"
+                    android:layout_marginTop="@dimen/_40pxv"
+                    android:layout_marginEnd="@dimen/_35pxh"
+                    android:layout_marginBottom="@dimen/_40pxv"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtWhereareyoug"
+                        style="@style/txtPoppinssemibold18_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Where are you going today"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"/>
+
+                    <FrameLayout
+                        android:id="@+id/frameStacklocation"
+                        android:layout_width="313dp"
+                        android:layout_height="106dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_marginEnd="@dimen/_1pxh">
+
+                        <LinearLayout
+                            android:id="@+id/linearDestination"
+                            style="@style/groupStylegray_50cornerRadius"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginTop="@dimen/_20pxv"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageLocation"
+                                android:layout_width="@dimen/_21pxh"
+                                android:layout_height="@dimen/_28pxh"
+                                android:layout_marginStart="@dimen/_15pxh"
+                                android:layout_marginTop="@dimen/_11pxv"
+                                android:layout_marginBottom="@dimen/_9pxv"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_location_pink_500"
+                                tools:ignore="ContentDescription"
+                                tools:src="@drawable/img_location_pink_500" />
+
+                            <EditText
+                                android:id="@+id/arrivalEditText"
+                                style="@style/etSolidRoundedOutline"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_20pxh"
+                                android:layout_marginTop="@dimen/_15pxv"
+                                android:layout_marginEnd="@dimen/_75pxh"
+                                android:layout_marginBottom="@dimen/_11pxv"
+                                android:layout_weight="0.89"
+                                android:ellipsize="end"
+                                android:hint="Choose your destination"
+                                android:singleLine="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearPickUpPoint"
+                            style="@style/groupStylegray_50cornerRadius"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|start"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageButton
+                                android:id="@+id/btnEye"
+                                android:layout_width="@dimen/_28pxh"
+                                android:layout_height="@dimen/_28pxh"
+                                android:layout_marginStart="@dimen/_12pxh"
+                                android:layout_marginTop="@dimen/_11pxv"
+                                android:layout_marginBottom="@dimen/_9pxv"
+                                android:background="@drawable/rectangle_bg_white_a700_radius_14"
+                                android:paddingHorizontal="@dimen/_4pxh"
+                                android:paddingVertical="@dimen/_4pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_eye"
+                                tools:ignore="ContentDescription" />
+
+                            <EditText
+                                android:id="@+id/departureEditText"
+                                style="@style/etSolidRoundedOutline"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:layout_marginTop="@dimen/_16pxv"
+                                android:layout_marginEnd="@dimen/_97pxh"
+                                android:layout_marginBottom="@dimen/_11pxv"
+                                android:layout_weight="0.84"
+                                android:ellipsize="end"
+                                android:hint="Choose departure"
+                                android:singleLine="true" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/conditionEditText"
+                        style="@style/etSolidRoundedOutline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_38pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:background="@drawable/rectangle_bg_gray_50_border_gray_200_radius_24"
+                        android:ellipsize="end"
+                        android:hint="Conditions of the trip"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_20pxh"
+                        android:paddingTop="@dimen/_15pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_700"
+                        tools:ignore="Autofill" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/timePicker"
+                        style="@style/btnSolidRounded_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_100pxv"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_20pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_20pxv"
+                        android:singleLine="true"
+                        android:text="pick time "
+                        android:textAllCaps="false" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/pushTripButton"
+                        style="@style/btnSolidRounded_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_30pxv"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_20pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_20pxv"
+                        android:singleLine="true"
+                        android:text="create"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

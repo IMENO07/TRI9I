@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="participantsRowModel" type="com.imenesapplication.app.modules.participantslistactivity.data.model.ParticipantsRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectangleeight"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_2">
+        <ImageView android:id="@+id/imageRectangleEight"
+            android:layout_height="@dimen/_56pxh"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="@dimen/_56pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_rectangle8}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle8"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnprice"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_weight="0.81" android:layout_width="0dp" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearRowprice"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.76"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{participantsRowModel.txtPrice}"
+                    style="@style/txtPoppinsregular14" tools:text="@string/lbl_cherif_hani"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_purple_a700_radius_13"
+                    android:id="@+id/btnCall"
+                    android:layout_height="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_135pxh"
+                    android:layout_width="@dimen/_26pxh"
+                    android:paddingHorizontal="@dimen/_5pxh"
+                    android:paddingVertical="@dimen/_5pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_call" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txt0560670964"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{participantsRowModel.txt0560670964}"
+                style="@style/txtPoppinssemibold14" tools:text="@string/lbl_0560_67_09_642"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

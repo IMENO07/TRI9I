@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20px"
+    android:layout_marginBottom="20px"
+    android:background="#1DFFFFFF"
+    android:backgroundTint="#83EAC0C0">
+
+    <LinearLayout
+        android:id="@+id/linearColumnwhereareyoug"
+        android:layout_width="322dp"
+        android:layout_height="139dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_linear_layout"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <FrameLayout
+            android:id="@+id/frameStacklocation"
+            android:layout_width="@dimen/_303pxh"
+            android:layout_height="@dimen/_112pxv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_1pxh">
+
+            <LinearLayout
+                android:id="@+id/linearDestination"
+                style="@style/groupStylegray_50cornerRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageLocation"
+                    android:layout_width="@dimen/_21pxh"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_location_pink_500"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_location_pink_500" />
+
+                <TextView
+                    android:id="@+id/arrivalEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_75pxh"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_weight="0.89"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearPickUpPoint"
+                style="@style/groupStylegray_50cornerRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnEye"
+                    android:layout_width="@dimen/_28pxh"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:background="@drawable/rectangle_bg_white_a700_radius_14"
+                    android:paddingHorizontal="@dimen/_4pxh"
+                    android:paddingVertical="@dimen/_4pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_eye"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/departureEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_18pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_marginEnd="@dimen/_97pxh"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_weight="0.84"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineLineTwo"
+                android:layout_width="@dimen/_2pxh"
+                android:layout_height="@dimen/_31pxv"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginBottom="@dimen/_37pxv"
+                android:background="@color/gray_400" />
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

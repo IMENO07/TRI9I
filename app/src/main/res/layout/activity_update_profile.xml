@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileActivity">
+
+    <LinearLayout
+        android:gravity="start"
+        android:id="@+id/linearEditprofile"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStylewhite_A700">
+        <FrameLayout
+            android:id="@+id/frameStackrectangleeight"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_134pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="@dimen/_134pxh">
+
+            <ImageView
+                android:id="@+id/profilPic"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_134pxh"
+                android:layout_width="@dimen/_134pxh"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_rectangle8"/>
+
+            <LinearLayout
+                android:id="@+id/linearColumnchangepicture"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                style="@style/groupStylegray_400_afcornerRadius">
+
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtChangePicture"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_55pxv"
+                    android:layout_marginEnd="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_marginTop="@dimen/_63pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="Change Picture"
+                    style="@style/txtPoppinsmedium10"/>
+            </LinearLayout>
+        </FrameLayout>
+        <EditText android:ellipsize="end"
+            android:id="@+id/username"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="Haany"
+            style="@style/txtPoppinssemibold16"
+            />
+
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="Full Name"
+            style="@style/txtPoppinsmedium14_2"
+            />
+
+        <LinearLayout android:id="@+id/linearRowprice"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:ellipsize="end"
+                android:id="@+id/name"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_weight="0.77"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="CHERIF Hani Salah Eddine"
+                style="@style/txtPoppinslight16"
+                />
+        </LinearLayout>
+
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtLanguageOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="Email"
+            style="@style/txtPoppinsmedium14_2"
+            />
+
+        <LinearLayout android:id="@+id/linearRowemail"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/txtEmail"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="hanisalaheddine.cherif@gmail.com"
+                style="@style/txtPoppinslight16"
+
+                />
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/btn_profile_update_email"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginStart="@dimen/_90pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="Change"
+                style="@style/txtPoppinsbold14"
+                />
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtLanguageTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="Gender"
+            style="@style/txtPoppinsmedium14_2"
+            />
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh">
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_500"
+                android:text="Female"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:buttonTint="@color/purple_500"
+                android:text="Male"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+        </RadioGroup>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtLanguageThree"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="Phone Number"
+            style="@style/txtPoppinsmedium14_2"
+            />
+
+        <LinearLayout android:id="@+id/linearRowmobileno"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:ellipsize="end"
+                android:id="@+id/phonenmbr"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_weight="0.62"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                style="@style/txtPoppinslight16"
+                />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/btn_update_profile"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="Finish"
+            android:textAllCaps="true"
+            style="@style/btnSolidRounded"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowTime"
+    android:orientation="vertical">
+
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAddcar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearColumnclose"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylepurple_A700">
+
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameBackground"
+                android:layout_height="@dimen/_709pxv"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent">
+
+                <ImageView android:id="@+id/imageRectangleEleven"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle11"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_rectangle11"/>
+
+                <LinearLayout android:id="@+id/linearColumndestination"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_54pxv"
+                    android:layout_marginEnd="@dimen/_35pxh"
+                    android:layout_marginStart="@dimen/_35pxh"
+                    android:layout_marginTop="@dimen/_54pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/tripList2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:singleLine="true"
+                        android:text="trip list"
+                        android:textAllCaps="true"
+                        style="@style/btnSolidRounded"
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:id="@+id/addTrip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="addTrip"
+                    android:textAllCaps="true"
+                    style="@style/btnSolidRounded"
+                    />
+                    <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:id="@+id/currentTrip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="current trip"
+                    android:textAllCaps="true"
+                    style="@style/btnSolidRounded"
+                    />
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

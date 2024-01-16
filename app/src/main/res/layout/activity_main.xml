@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout android:gravity="center_horizontal"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:id="@+id/linear1SplashScree"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStylepurple_A700">
+        <ImageView
+            android:id="@+id/imageMainNouveauprojet"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_182pxh"
+            android:layout_marginEnd="@dimen/_35pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_70pxv"
+            android:layout_width="@dimen/_161pxh"
+            android:adjustViewBounds="true"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/nouveauprojet"/>
+
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtFindabestPri"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_35pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_69pxv"
+            android:layout_width="match_parent"
+            android:text="Find a best
+price"
+            style="@style/txtPoppinsregular40" />
+
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_35pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_10pxh"
+            android:text="Sharing the road, sharing the ride: Connect with carpoolers nationwide!"
+            style="@style/txtPoppinsregular16"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/Mainlogin"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_35pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_60pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_20pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_20pxv"
+            android:singleLine="true"
+            android:text="Loginwith E-mail"
+            android:textAllCaps="false"
+            style="@style/btnSolidRounded_1"
+            />
+
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtConfirmation"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginEnd="@dimen/_35pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="Don't have an account?"
+            style="@style/txtPoppinsregular14" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/Mainsignup"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

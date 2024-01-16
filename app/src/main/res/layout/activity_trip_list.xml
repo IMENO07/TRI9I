@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripList"
+    android:orientation="vertical">
+
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAddcar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+    <LinearLayout android:id="@+id/linearColumnclose"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylepurple_A700">
+
+    <FrameLayout android:gravity="start"
+        android:id="@+id/frameBackground"
+        android:layout_height="@dimen/_709pxv"
+        android:layout_marginTop="@dimen/_20pxv" android:layout_width="match_parent">
+    <ImageView android:id="@+id/imageRectangleEleven"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_rectangle11"
+        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle11"/>
+    <LinearLayout android:id="@+id/linearColumndestination"
+        android:layout_gravity="top|center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_54pxv"
+        android:layout_marginEnd="@dimen/_35pxh"
+        android:layout_marginStart="@dimen/_35pxh"
+        android:layout_marginTop="@dimen/_54pxv"
+        android:layout_width="match_parent" android:orientation="vertical">
+
+
+        <LinearLayout android:id="@+id/linearColumndestination1"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="departure"
+                />
+                <EditText
+                    android:id="@+id/departureFilter"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+             />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/linearColumndestination2"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="destination"
+ />
+            <EditText
+            android:id="@+id/destinationFilter"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:inputType="textPersonName" />
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/filter"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="find"
+/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ViewPassengers"
+            android:layout_width="378dp"
+            android:layout_height="344dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/filter"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </LinearLayout>
+    </FrameLayout>
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadProfilPicActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/imgv_profil_dp"
+            android:layout_width="@dimen/_200pxh"
+            android:layout_height="@dimen/_200pxh"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_70pxh"
+            android:layout_marginTop="@dimen/_70pxv"
+            android:layout_marginEnd="@dimen/_69pxh"
+            app:srcCompat="@drawable/img_rectangle8"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/upload_pic_choose_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_90pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:layout_below="@+id/imgv_profil_dp"
+            style="@style/btnSolidRounded"
+            android:text="choose picture"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/upload_pic_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:layout_below="@+id/upload_pic_choose_btn"
+            style="@style/btnSolidRounded"
+            android:text="upload"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
